@@ -4,8 +4,10 @@ clothes:
   description: t-shirts
   title: 10 blue t-shirts
   status: open
+  organization_id: 1
 
 diapers:
   description: diapers
   title: 100 EG diapers 
   status: open
+  organization_id: 2

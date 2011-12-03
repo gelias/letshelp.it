@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20111203185328) do
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "organization_id"
   end
 
   create_table "organizations", :force => true do |t|
