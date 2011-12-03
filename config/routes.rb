@@ -8,7 +8,9 @@ LetshelpIt::Application.routes.draw do
   match '/organizations/search' => 'organizations#search', :as => :search, :via => 'get'
   match '/organizations/ajax_edit' => 'organizations#ajax_edit', :as => :ajax_edit
   resources :organizations
-
-  match '/:id' => 'organizations#show', :as => :organization_shortcut
   
+  match '/needs' => 'needs#index', :as => :index, :via => 'get'  
+  match '/:id' => 'organizations#show', :as => :organization_shortcut
+
+
 end
