@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+clothes:
+  description: t-shirts
+  title: 10 blue t-shirts
+  status: open
+
+diapers:
+  description: diapers
+  title: 100 EG diapers 
+  status: open

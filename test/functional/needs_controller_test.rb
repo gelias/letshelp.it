@@ -2,9 +2,13 @@ require File.expand_path(File.dirname(__FILE__) + "/../test_helper")
 
 class NeedsControllerTest < ActionController::TestCase
 
-  should "be able to see the needs list" do
-    get :index
-    assert_response :success
+  context 'index page' do
+    setup { get :index }
+    should respond_with :success
+    should assign_to :needs
+    should render_template :index
+    should_not set_the_flash
   end
+
 
 end
